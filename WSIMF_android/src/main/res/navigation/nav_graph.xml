@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/productListFragment">
+    <fragment
+        android:id="@+id/productListFragment"
+        android:name="com.example.wsimf.android.ProductListFragment"
+        android:label="product_fragment_item_list"
+        tools:layout="@layout/product_fragment_item_list" >
+        <action
+            android:id="@+id/action_productListFragment_to_placeholder2"
+            app:destination="@id/placeholder2" />
+    </fragment>
+    <fragment android:id="@+id/placeholder2" />
+</navigation>
